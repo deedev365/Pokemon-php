@@ -1,6 +1,6 @@
 ### Objective
 
-Your assignment is to create a Pokémon API from a CSV file using PHP and Laravel.
+Your assignment is to create a Pokémon API from a CSV file using PHP.
 
 ### Brief
 
@@ -10,7 +10,6 @@ Professor Oak is in trouble! A wild Blastoise wreaked havoc in the server room a
 
 -   Implement assignment using:
     -   Language: **PHP**
-    -   Framework: **Laravel**
 -   Create a Pokémon Model that includes all fields outlined in `/Data/pokemon.csv`
 -   Parse the .csv file and create entries for each row based on the following conditions:
     -   Exclude Legendary Pokémon
@@ -26,13 +25,3 @@ Professor Oak is in trouble! A wild Blastoise wreaked havoc in the server room a
         -   Filter: HP, Attack & Defense
             -   e.g. `/pokemon?hp[gte]=100&defense[lte]=200`
         -   Pagination: e.g. `/pokemon?page=1`
-
-### Evaluation Criteria
-
--   **PHP** best practices
--   Show us your work through your commit history
--   We're looking for you to produce working code, with enough room to demonstrate how to structure components in a small program
--   Completeness: did you complete the features?
--   Correctness: does the functionality act in sensible, thought-out ways?
--   Maintainability: is it written in a clean, maintainable way?
--   Testing: is the system adequately tested?

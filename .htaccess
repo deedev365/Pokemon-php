@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} ^(.+)/$
+    RewriteRule ^(.+)/$  /$1 [R=301,L]
+
+    RemoveHandler .html .htm 
+    AddType application/x-httpd-php .php .htm .html .phtml
+
+    RewriteRule ^([^/\.]+)/?$ index.php?page=$1 [L]
+
+</IfModule>
